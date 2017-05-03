@@ -6,7 +6,7 @@
 
     <form method="post" class="uk-form uk-padding-large">
         <fieldset class="uk-fieldset">
-            <legend class="uk-legend uk-text-center">Удаление специальности</legend>
+            <legend class="uk-legend uk-text-center">Удаление раздела</legend>
 
             <div class="uk-margin">
                 <input type="text" class="uk-input" placeholder="Номер раздела" name="id">
