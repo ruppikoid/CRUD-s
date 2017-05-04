@@ -10,13 +10,13 @@
         $database->query("
             update `раздел` set 
             
-            `название`  = '{$_POST['title']}',
-            `статус`    = '{$_POST['status']}',
-            `описание`  = '{$_POST['disc']}',
-            `номер_меню`   = '{$_POST['number']}',
+            `название`      = '{$_POST['title']}',
+            `статус`        = '{$_POST['status']}',
+            `описание`      = '{$_POST['disc']}',
+            `номер_меню`    = '{$_POST['number']}',
             `дополнительно` = '{$_POST['longdisc']}' 
 
-             where `номер`= `{$_POST['id']}`
+             where `номер`  = `{$_POST['id']}`
 
         ");
         header('Location: read.php');
