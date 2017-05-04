@@ -11,7 +11,8 @@
             update `Исполнитель` set 
             
             `название`='{$_POST['title']}' 
-            where `номер`={$_POST['id']}
+            
+            where `номер`= `{$_POST['id']}`
         ");
         header('Location: index.php');
     }
