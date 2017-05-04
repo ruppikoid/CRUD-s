@@ -10,12 +10,12 @@
         $database->query("
             update `Новости` set 
             
-            `заголовок`='{$_POST['title']}',
-            `краткое_описание`='{$_POST['desc']}',
-            `содержимое`='{$_POST['content']}',
-            `автор`='{$_POST['author']}'
+            `заголовок`          = '{$_POST['title']}',
+            `краткое_описание`   = '{$_POST['desc']}',
+            `содержимое`         = '{$_POST['content']}',
+            `автор`              = '{$_POST['author']}'
 
-            where `номер`='{$_POST['номер']}'
+             where `номер`       = '{$_POST['номер']}'
         ");
         header('Location: index.php');
     }
