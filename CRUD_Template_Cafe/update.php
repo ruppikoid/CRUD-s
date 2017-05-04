@@ -16,7 +16,7 @@
             `номер_меню`   = '{$_POST['number']}',
             `дополнительно` = '{$_POST['longdisc']}' 
 
-             where `номер`={$_POST['id']}
+             where `номер`= `{$_POST['id']}`
 
         ");
         header('Location: read.php');
