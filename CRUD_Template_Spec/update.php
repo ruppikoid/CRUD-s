@@ -10,12 +10,12 @@
         $database->query("
             update `Специальности` set 
             
-            код = '{$_POST['id']}', 
-            наименование = '{$_POST['title']}', 
-            уровень = '{$_POST['lvl']}', 
-            описание = '{$_POST['disc']}' 
+            код             = '{$_POST['id']}', 
+            наименование    = '{$_POST['title']}', 
+            уровень         = '{$_POST['lvl']}', 
+            описание        = '{$_POST['disc']}' 
 
-             where код={$_POST['new_id']}'
+             where код      = '{$_POST['new_id']}'
         ");
         header('Location: read.php');
     }
