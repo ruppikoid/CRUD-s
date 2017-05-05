@@ -3,21 +3,18 @@
     // подключение основного файла приложения
     require("core/app.php");
 
-    // пример переменной для рендера
-    $page['title'] = 'Описание системы';
+    // если передан номер записи для удаления
+    if (isset($_GET['id'])) {
+        // записываем в переменную
+        $id = intval($_GET['id']);
 
-    if (isset($_POST['delete'])) {
-        $item = [
-            'номер'       => $_POST['номер'],
-        ];
-        $database->query("
-            delete from Новости where `номер`={$item['номер']}
+        // вызываем удаление в БД
+        $database->query(
+            'delete from news where id='.$id
+        );
 
-        ");
-        header('Location: index.php');
+        // переадресация на главную страницу
+        header("Location: read.php");
     }
-
-    // вызов функции рендера шаблона HTML-страницы
-    renderPage('delete', $page);
 
 ?>

@@ -4,15 +4,14 @@
     require("core/app.php");
 
     // пример переменной для рендера
-    $page['title'] = 'Описание системы';
+    $page['title'] = 'Список существующих записей';
 
-    $page['ispolnitel'] = $database->get_all(
-        'select * from `Новости`'
+    // получение всех записей из таблицы
+    $page['news'] = $database->get_all(
+        'select * from news'
     );
 
     // вызов функции рендера шаблона HTML-страницы
     renderPage('read', $page);
-
-
 
 ?>

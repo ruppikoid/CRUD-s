@@ -4,11 +4,8 @@
 
         <ul class="uk-navbar-nav">
             <li><a href="index.php">Главная</a></li>
-            
-            <li><a href="create.php">Добавить</a></li>
-            <li><a href="read.php">Просмотр</a></li>
-            <li><a href="update.php">Редактирование</a></li>
-            <li><a href="delete.php">Удаление</a></li>
+            <li><a href="read.php">Просмотр записей</a></li>
+            <li><a href="edit.php">Добавить запись</a></li>
         </ul>
 
     </div>
